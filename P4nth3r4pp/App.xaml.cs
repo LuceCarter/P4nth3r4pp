@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using P4nth3r4pp.Views;
 
 namespace P4nth3r4pp
 {
