@@ -1,16 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              ios:Page.UseSafeArea="True"
+             Title="WhiteP4nth3rApp"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.TitleIconImageSource="Majick"
              x:Class="P4nth3r4pp.Views.MainPage">
-    <StackLayout>
-        <Frame
-               CornerRadius="0"
-            HasShadow="False"
-               Padding="0">
-         <Image Source="bg"
-                Aspect="AspectFill" />
-        </Frame>
+    <StackLayout BackgroundColor="#0f111a">
+        <Grid>
+            <Image Aspect="AspectFill"
+                   Source="bg"/>
+            <StackLayout VerticalOptions="End">
+                <Image HeightRequest="100"
+                       Source="majick"
+                       WidthRequest="100"/>
+                <BoxView BackgroundColor="White"
+                         HeightRequest="5"
+                         Margin="0"/>
+            </StackLayout>          
+                         
+        </Grid>
     </StackLayout>
 </ContentPage>
