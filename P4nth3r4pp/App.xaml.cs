@@ -11,7 +11,7 @@ namespace P4nth3r4pp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()
