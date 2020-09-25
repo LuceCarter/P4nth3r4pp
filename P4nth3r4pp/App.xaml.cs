@@ -1,7 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using P4nth3r4pp.Views;
+﻿using Xamarin.Forms;
+
 
 [assembly: ExportFont("WorkSans.ttf") ]
 namespace P4nth3r4pp
@@ -13,7 +11,7 @@ namespace P4nth3r4pp
             Device.SetFlags(new string[] { "Shapes_Experimental" });
             InitializeComponent();
 
-            MainPage = new HomePage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()
